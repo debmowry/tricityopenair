@@ -1,0 +1,11 @@
+/* For Internet Explorer 7 */
+.menu-item {display: inline-block;float: left;}
+#site-navigation .mdd-menu .sub-nav {display: none;}
+.section.header form#searchform { width: 330px; }
+.section.header input[type="text"] { margin-left: 5px;
+padding-top: 14px;}
+.screen-reader-text { display: none;}
+.nav-links .button { width: 100px;}
+p#breadcrumbs { display: none; }
+figure.thumbnailsquare { margin: 2px 20px 0px 0}
+p.postmetadata .commentlink { display:block; float: none;}
