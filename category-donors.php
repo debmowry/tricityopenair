@@ -1,18 +1,15 @@
 <?php
 /**
- * @package tricitysamora
+ * @package tricityopenair
  */
 ?>
-<?php get_header(); ?>
 
-<!-- <div class="sixteen columns" id="main"> -->
+<?php get_header(); ?>
 
 <div id="primary" class="content-area">
 
-
     <?php if (function_exists('yoast_breadcrumb')) { yoast_breadcrumb('<p id="breadcrumbs">','</p>'); } ?>
 
-<!--    <div class="twelve columns alpha" role="main"> -->
     <div class="site-content" role="main" id="content">
 
     <?php if ( have_posts() ) : ?>
@@ -75,7 +72,7 @@
                 }
             ?>
         <?php endwhile; ?>
-        </ul></section>
+        </ul></section></div>
 
         <?php if (strrpos($issilver, 'Silver')) { echo '<div class="entry-content"><section><h3>Silver Level Donors</h3><ul>'; } ?>
         <?php while ( have_posts() ) : the_post(); ?>
