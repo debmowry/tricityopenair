@@ -11,7 +11,7 @@
         }
     ?>
     <header class="entry-header">
-        <h1 id="page-title"><?php the_title(); ?></h1>
+        <h1 id="post-title"><?php the_title(); ?></h1>
         <?php
             // Check for post_category = exhibit subtitle
             if(get_field('event_subtitle')) {
