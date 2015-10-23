@@ -8,6 +8,8 @@
  */
 
 if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) || is_active_sidebar( 'sidebar-1' )  ) : ?>
+echo "hi z";
+
 	<div id="secondary" class="secondary">
 
 		<?php if ( has_nav_menu( 'primary' ) ) : ?>
@@ -17,6 +19,7 @@ if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) || is_active_sidebar(
 					wp_nav_menu( array(
 						'menu_class'     => 'nav-menu',
 						'theme_location' => 'primary',
+						
 					) );
 				?>
 			</nav><!-- .main-navigation -->
