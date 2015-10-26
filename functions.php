@@ -28,6 +28,21 @@ function displayDayCalendar(){
 }
 add_shortcode('displayDayCalendar', 'displayDayCalendar');
 
+function check_browser(){
+
+
+$displayHTML = '<b>Nice modern browser you got there!</b>';
+$displayHTML =  $_SERVER['HTTP_USER_AGENT']."<br>";
+$browser = get_browser();
+$displayHTML .= $browser;
+
+
+
+  return  $displayHTML;
+}
+
+
+add_shortcode('check_browser', 'check_browser');
 
 //SET the following variables in wp-config file
 // public or limited calendar to view ie google account
@@ -116,6 +131,9 @@ if ($atts['format']  == 'day'){
       } //end if count
     else {
       foreach ($results->getItems() as $event) {
+        $eventVisibility = $event->visibility;
+        //$displayHTML .= $eventVisibility;
+        if ($eventVisibility=='public' || $eventVisibility==null){
         $start = $event->start->dateTime;
         $end = $event->end->dateTime;
         if (empty($start)) 
@@ -143,6 +161,7 @@ if ($atts['format']  == 'day'){
 
             $previousStart = $start;
           }
+        }//end if visibility
               
       }//end for each
     }//end else 
