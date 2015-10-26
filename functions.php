@@ -160,7 +160,7 @@ if ($atts['format']  == 'day'){
             $displayHTML .= $event->getSummary(). "</a><br>";
 
             $previousStart = $start;
-          }
+          }//end else date heading
         }//end if visibility
               
       }//end for each
