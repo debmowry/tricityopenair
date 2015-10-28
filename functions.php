@@ -163,14 +163,14 @@ if ($atts['format']  == 'day'){
 
           if ($firstDate == $secondDate){
             $displayHTML .= date_format($start,'H:i')." to ".date_format($start,'H:i');
-            $displayHTML .= "<a href=\"" .$event->getHtmlLink()."\" target=\"_blank\">";
+            $displayHTML .= "<a href=\"" .$event->getHtmlLink()."\" aria-haspopup=\"true\" target=\"_blank\">";
             $displayHTML .= $event->getSummary(). "</a><br>";
 
          }
          else {
             $displayHTML .= "". date_format($start,'l F jS Y')."<br> ";
             $displayHTML .= date_format($start,'H:i')." to ".date_format($start,'H:i');
-            $displayHTML .= "  <a href=\"" .$event->getHtmlLink()."\" target=\"_blank\">";
+            $displayHTML .= "  <a href=\"" .$event->getHtmlLink()."\" aria-haspopup=\"true\" target=\"_blank\">";
             $displayHTML .= $event->getSummary(). "</a><br>";
 
             $previousStart = $start;
@@ -180,7 +180,7 @@ if ($atts['format']  == 'day'){
       }//end for each
     }//end else 
 
-$displayHTML .=  "<a href =\"https://calendar.google.com/calendar/embed?src=".$calendarToWorkWith."&amp;ctz=America/Chicago\" target=\"_blank\"> Link to Calendar</a>";
+$displayHTML .=  "<a href =\"https://calendar.google.com/calendar/embed?src=".$calendarToWorkWith."&amp;ctz=America/Chicago\" aria-haspopup=\"true\" target=\"_blank\"> Link to Calendar</a>";
 return $displayHTML;
 }//end of function
 

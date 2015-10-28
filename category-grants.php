@@ -44,7 +44,6 @@
                     <div class="entry-content">
                         <?php get_template_part( 'content', 'single' ); ?>
                     </div><!--.entry-->
-<!-- think the commments should be removed need to double check with Debbie --> 
                     <?php
                         if (comments_open()) {
                             echo '<p class="postmetadata">';
