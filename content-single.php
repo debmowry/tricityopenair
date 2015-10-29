@@ -67,6 +67,24 @@
             if (get_field('artist_medium')) {
                 echo '<p class="artist-info medium"><strong>Medium: </strong>'; the_field('artist_medium'); echo '</p>';
             }
+            // Check for post_category = grant name and grant details
+            if (get_field('grant_name')) {
+                echo '<p class="artist-info disability"><strong>Grant Name: </strong>'; the_field('grant_name'); echo '</p>';
+            }
+            if (get_field('grant_num_served')) {
+                echo '<p class="artist-info medium"><strong>Grant Details: </strong>'; the_field('grant_num_served'); echo '</p>';
+            }
+
+            if (get_field('grant_impact')) {
+                echo '<p class="artist-info medium"><strong>Impact of Grant: </strong>'; the_field('grant_impact'); echo '</p>';
+            }
+
+
+            if (get_field('grant_status')) {
+                echo '<p class="artist-info medium"><strong>Grant Status: </strong>'; the_field('grant_status'); echo '</p>';
+            }
+
+
             // Used on all post pages.
             the_content();
                 wp_link_pages( array(

@@ -20,3 +20,10 @@ Template:    twentythirteen
 @import url('css/navigation.css');
 @import url('css/shoppingcart.css');
 @import url('css/sidebar.css');
+
+.entry-author-link,
+.entry-permalink,
+.entry-date,
+.entry-meta {
+	display: none;
+}
