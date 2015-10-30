@@ -1,8 +1,11 @@
 <?php
 
 // global variables
-
 define(MAX_RESULTS,15);
+// widgetize
+add_filter('widget_text', 'do_shortcode');
+
+
   add_filter('widget_text', 'do_shortcode');
 // functions for child theme
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
