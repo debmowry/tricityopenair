@@ -74,16 +74,12 @@
             if (get_field('grant_num_served')) {
                 echo '<p class="artist-info medium"><strong>Grant Details: </strong>'; the_field('grant_num_served'); echo '</p>';
             }
-
             if (get_field('grant_impact')) {
                 echo '<p class="artist-info medium"><strong>Impact of Grant: </strong>'; the_field('grant_impact'); echo '</p>';
             }
-
-
             if (get_field('grant_status')) {
                 echo '<p class="artist-info medium"><strong>Grant Status: </strong>'; the_field('grant_status'); echo '</p>';
             }
-
 
             // Used on all post pages.
             the_content();
