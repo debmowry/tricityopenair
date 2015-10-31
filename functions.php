@@ -9,6 +9,7 @@ define(MAX_RESULTS,15);
 function tricityopenair_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'tricityopenair_google_fonts', '//fonts.googleapis.com/css?family=Lato:400,700,300|Raleway:700,400,300,200,100|Muli:400,300' );
+    // Not sure if the following will be used so commenting out instead of removing
     //wp_register_script( 'tricityopenair_menu_custom', get_bloginfo('stylesheet_directory') . '/js/menu.js', array( 'jquery' ) );
     //wp_enqueue_script( 'tricityopenair_menu_custom' );
 }
