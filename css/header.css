@@ -1,17 +1,22 @@
-.site-header {
-    background-image: url(../images/headers/larinclay1920w300h.jpg);
+/* home banner height = width * 0.15625 for widths of 1920 to 601 */
+/* other banner heights = width * 0.10416666666667 for widths of 1920 to 601 */
+/* mobile banner heights = width * 0.375 for widths of 600 or less */
+
+.home .site-header {
     background-repeat: no-repeat;
     background-position: center 80px;
-    height: 480px;
+    background-size: contain;
+    height: 0;
+    margin: 0 auto 45px;
+    /* height: 480px; */
 }
 .site-header .home-link {
     background-image: url(../images/headers/imagineartlogo.png);
     background-image: url(../images/headers/imagineartlogo.svg), linear-gradient(transparent, transparent);
-    background-position: 20px 7px;
+    background-position: 10px 7px;
     background-repeat: no-repeat;
     background-size: 80px;
     height: 80px;
-    margin-bottom: 300px;
     min-height: 80px;
     padding: 0;
 }
@@ -19,7 +24,7 @@
     display: inline;
     font-weight: 100;
     line-height: 80px;
-    margin-left: 120px;
+    margin-left: 110px;
     padding: 0;
 }
 .site-header .home-link .site-description {
@@ -28,4 +33,41 @@
     font-size: 120%;
     font-weight: 700;
     margin-left: 15px;
+}
+@media only screen and (max-width: 600px) {
+    .home .site-header {
+        background-image: url(../images/headers/home/banner600w225h.jpg);
+        padding: 80px 0 37.5% 0;
+    }
+    .home .site-header .home-link {
+        margin: -80px auto 37.5%;
+    }
+}
+@media only screen and (min-width: 601px) {
+    .home .site-header {
+        padding: 80px 0 15.625% 0;
+    }
+    .home .site-header .home-link {
+        margin: -80px auto 15.625%;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+    .home .site-header {
+        background-image: url(../images/headers/home/banner800w125h.jpg);
+    }
+}
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+    .home .site-header {
+        background-image: url(../images/headers/home/banner1200w188h.jpg);
+    }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1600px) {
+    .home .site-header {
+        background-image: url(../images/headers/home/banner1600w250h.jpg);
+    }
+}
+@media only screen and (min-width: 1601px) {
+    .home .site-header {
+        background-image: url(../images/headers/home/banner1920w300h.jpg);
+    }
 }
