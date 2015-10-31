@@ -2,7 +2,7 @@
 /* other banner heights = width * 0.10416666666667 for widths of 1920 to 601 */
 /* mobile banner heights = width * 0.375 for widths of 600 or less */
 
-.home .site-header {
+.site-header {
     background-repeat: no-repeat;
     background-position: center 80px;
     background-size: contain;
@@ -35,13 +35,15 @@
     margin-left: 15px;
 }
 @media only screen and (max-width: 600px) {
-    .home .site-header {
-        background-image: url(../images/headers/home/banner600w225h.jpg);
+    .site-header {
         padding: 80px 0 37.5% 0;
     }
-    .home .site-header .home-link {
+    .home .site-header .home-link,
+    .category .site-header .home-link {
         margin: -80px auto 37.5%;
     }
+    .home .site-header { background-image: url(../images/headers/home/banner600w225h.jpg); }
+    .category .site-header { background-image: url(../images/headers/engage/banner600w225h.jpg); }
 }
 @media only screen and (min-width: 601px) {
     .home .site-header {
@@ -50,24 +52,26 @@
     .home .site-header .home-link {
         margin: -80px auto 15.625%;
     }
+    .category .site-header {
+        padding: 80px 0 10.416666666667% 0;
+    }
+    .category .site-header .home-link {
+        margin: -80px auto 10.416666666667%;
+    }
 }
 @media only screen and (min-width: 601px) and (max-width: 800px) {
-    .home .site-header {
-        background-image: url(../images/headers/home/banner800w125h.jpg);
-    }
+    .home .site-header { background-image: url(../images/headers/home/banner800w125h.jpg); }
+    .category .site-header { background-image: url(../images/headers/engage/banner800w83h.jpg); }
 }
 @media only screen and (min-width: 801px) and (max-width: 1200px) {
-    .home .site-header {
-        background-image: url(../images/headers/home/banner1200w188h.jpg);
-    }
+    .home .site-header { background-image: url(../images/headers/home/banner1200w188h.jpg); }
+    .category .site-header { background-image: url(../images/headers/engage/banner1200w125h.jpg); }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1600px) {
-    .home .site-header {
-        background-image: url(../images/headers/home/banner1600w250h.jpg);
-    }
+    .home .site-header { background-image: url(../images/headers/home/banner1600w250h.jpg); }
+    .category .site-header { background-image: url(../images/headers/engage/banner1600w167h.jpg); }
 }
 @media only screen and (min-width: 1601px) {
-    .home .site-header {
-        background-image: url(../images/headers/home/banner1920w300h.jpg);
-    }
+    .home .site-header { background-image: url(../images/headers/home/banner1920w300h.jpg); }
+    .category .site-header { background-image: url(../images/headers/engage/banner1920w200h.jpg); }
 }
