@@ -1,0 +1,31 @@
+.site-header {
+    background-image: url(../images/headers/larinclay1920w360h.jpg);
+    background-repeat: no-repeat;
+    background-position: center 80px;
+    height: 480px;
+}
+.site-header .home-link {
+    background-image: url(../images/headers/imagineartlogo.png);
+    background-image: url(../images/headers/imagineartlogo.svg), linear-gradient(transparent, transparent);
+    background-position: 20px 7px;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    height: 80px;
+    margin-bottom: 360px;
+    min-height: 80px;
+    padding: 0;
+}
+.site-header .home-link .site-title {
+    display: inline;
+    font-weight: 100;
+    line-height: 80px;
+    margin-left: 120px;
+    padding: 0;
+}
+.site-header .home-link .site-description {
+    display: inline;
+    font-family: 'Raleway', sans-serif;
+    font-size: 120%;
+    font-weight: 700;
+    margin-left: 15px;
+}
