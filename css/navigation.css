@@ -1,18 +1,21 @@
 .navbar {
     background-color: #ffffff;
     font-size: 1.25em;
+    margin: 0 auto;
+    max-width: 1600px;
+    width: 100%;
 }
 
 .nav-menu ul {
-    background-color: #724096;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .nav-menu li:focus > a,
 .nav-menu li:hover > a,
 .nav-menu li a:focus,
 .nav-menu li a:hover {
-    background-color: #430073;
+    background-color: #375e0b;
     color: #ffffff;
 }
 
@@ -26,8 +29,9 @@
 .nav-menu .current_page_ancestor > a,
 .nav-menu .current-menu-item > a,
 .nav-menu .current-menu-ancestor > a {
-    background-color: #e7dfed;
-    color: #333;
-    font-style: normal;
+    background-color: #ffffff;
+    color: #45750d;
+    font-size: 1em;
+    font-style: italic;
     font-weight: bold;
 }
