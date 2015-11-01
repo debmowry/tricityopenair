@@ -1,6 +1,8 @@
-/* home banner height = width * 0.15625 for widths of 1920 to 601 */
-/* other banner heights = width * 0.10416666666667 for widths of 1920 to 601 */
-/* mobile banner heights = width * 0.375 for widths of 600 or less */
+/* 1920w 300h = 15.625% */
+/* 1600w 300h = 18.75% */
+/* 1200w 250h = 20.833333333333% */
+/* 800w 250h = 31.25% */
+/* mobile banner 600w 225h = 37.5% */
 
 .site-header {
     background-repeat: no-repeat;
@@ -38,40 +40,65 @@
     .site-header {
         padding: 80px 0 37.5% 0;
     }
-    .home .site-header .home-link,
-    .category .site-header .home-link {
+    .site-header .home-link,
+    .site-header .home-link {
         margin: -80px auto 37.5%;
     }
     .home .site-header { background-image: url(../images/headers/home/banner600w225h.jpg); }
-    .category .site-header { background-image: url(../images/headers/engage/banner600w225h.jpg); }
-}
-@media only screen and (min-width: 601px) {
-    .home .site-header {
-        padding: 80px 0 15.625% 0;
-    }
-    .home .site-header .home-link {
-        margin: -80px auto 15.625%;
-    }
-    .category .site-header {
-        padding: 80px 0 10.416666666667% 0;
-    }
-    .category .site-header .home-link {
-        margin: -80px auto 10.416666666667%;
-    }
+    .category-engage .site-header { background-image: url(../images/headers/engage/banner600w225h.jpg); }
+    .category-happenings .site-header { background-image: url(../images/headers/happenings/banner600w225h.jpg); }
+    .category-mission .site-header { background-image: url(../images/headers/joseph/banner600w225h.jpg); }
+    .category-happenings .site-header { background-image: url(../images/headers/happenings/banner600w225h.jpg); }
 }
 @media only screen and (min-width: 601px) and (max-width: 800px) {
-    .home .site-header { background-image: url(../images/headers/home/banner800w125h.jpg); }
-    .category .site-header { background-image: url(../images/headers/engage/banner800w83h.jpg); }
+    .home .site-header { background-image: url(../images/headers/home/banner800w250h.jpg); }
+    .category-engage .site-header { background-image: url(../images/headers/engage/banner800w250h.jpg); }
+    .category-happenings .site-header { background-image: url(../images/headers/happenings/banner800w250h.jpg); }
+    .category-mission .site-header { background-image: url(../images/headers/joseph/banner800w250h.jpg); }
+    .category-happenings .site-header { background-image: url(../images/headers/happenings/banner800w250h.jpg); }
+    .site-header {
+        padding: 80px 0 31.25% 0;
+    }
+    .site-header .home-link {
+        margin: -80px auto 31.25%;
+    }
 }
 @media only screen and (min-width: 801px) and (max-width: 1200px) {
-    .home .site-header { background-image: url(../images/headers/home/banner1200w188h.jpg); }
-    .category .site-header { background-image: url(../images/headers/engage/banner1200w125h.jpg); }
+    .home .site-header { background-image: url(../images/headers/home/banner1200w250h.jpg); }
+    .category-engage .site-header { background-image: url(../images/headers/engage/banner1200w250h.jpg); }
+    .category-happenings .site-header { background-image: url(../images/headers/happenings/banner1200w250h.jpg); }
+    .category-mission .site-header { background-image: url(../images/headers/joseph/banner1200w250h.jpg); }
+    .category-happenings .site-header { background-image: url(../images/headers/happenings/banner1200w250h.jpg); }
+    .site-header {
+        padding: 80px 0 20.833333333333% 0;
+    }
+    .site-header .home-link {
+        margin: -80px auto 20.833333333333%;
+    }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1600px) {
-    .home .site-header { background-image: url(../images/headers/home/banner1600w250h.jpg); }
-    .category .site-header { background-image: url(../images/headers/engage/banner1600w167h.jpg); }
+    .home .site-header { background-image: url(../images/headers/home/banner1600w300h.jpg); }
+    .category-engage .site-header { background-image: url(../images/headers/engage/banner1600w300h.jpg); }
+    .category-happenings .site-header { background-image: url(../images/headers/happenings/banner1600w300h.jpg); }
+    .category-mission .site-header { background-image: url(../images/headers/joseph/banner1600w300h.jpg); }
+    .category-happenings .site-header { background-image: url(../images/headers/happenings/banner1600w300h.jpg); }
+    .site-header {
+        padding: 80px 0 18.75% 0;
+    }
+    .site-header .home-link {
+        margin: -80px auto 18.75%;
+    }
 }
 @media only screen and (min-width: 1601px) {
     .home .site-header { background-image: url(../images/headers/home/banner1920w300h.jpg); }
-    .category .site-header { background-image: url(../images/headers/engage/banner1920w200h.jpg); }
+    .category-engage .site-header { background-image: url(../images/headers/engage/banner1920w300h.jpg); }
+    .category-happenings .site-header { background-image: url(../images/headers/happenings/banner1920w300h.jpg); }
+    .category-mission .site-header { background-image: url(../images/headers/joseph/banner1920w300h.jpg); }
+    .category-happenings .site-header { background-image: url(../images/headers/happenings/banner1920w300h.jpg); }
+    .site-header {
+        padding: 80px 0 15.625% 0;
+    }
+    .site-header .home-link {
+        margin: -80px auto 15.625%;
+    }
 }
