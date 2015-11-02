@@ -21,6 +21,25 @@ function favicon_link() {
 }
 add_action( 'wp_head', 'favicon_link' );
 
+function tricityopenair_create_body_class() {
+    $pagetitle = get_post_field('post_title');
+    $pagetype = get_post_field('post_type');
+    if ($pagetype == 'page') {
+        //$bodyclass = str_replace(' ', '', strtolower($pagetitle));
+        if (strpos($pagetitle, 'About') !== FALSE) {
+            $bodyclass = 'about';
+        } elseif (strpos($pagetitle, 'Contact') !== FALSE) {
+            $bodyclass = 'contact';
+        } elseif (strpos($pagetitle, 'Give') !== FALSE) {
+            $bodyclass = 'give';
+        } else {
+            $bodyclass = 'no-custom-banner';
+        }
+        return $bodyclass;
+    }
+}
+add_shortcode('tricityopenair_create_body_class', 'tricityopenair_create_body_class');
+
 // function to display embedded google calendar
 function displayDayCalendar(){
   $today = date("Ymd");
