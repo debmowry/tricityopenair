@@ -3,7 +3,7 @@ add_filter('widget_text', 'do_shortcode');
 
 // global variables
 
-define(MAX_RESULTS,15);
+define(MAX_RESULTS,8);
 
 // import styles, fonts and scripts for child theme plus moved "add_action" below function for consistency
 function tricityopenair_enqueue_styles() {
@@ -126,7 +126,7 @@ else if ($atts['calendar']  == 'special_happenings'){
 
 if ($atts['format']  == 'list'){
 
-    $displayHTML = "<b>List of next ".MAX_RESULTS." activities</b> <br>";
+    $displayHTML = "<b>List of Next ".MAX_RESULTS." Activities</b> <br>";
     $optParams = array(
     'maxResults' => MAX_RESULTS,
     'orderBy' => 'startTime',
@@ -139,7 +139,7 @@ if ($atts['format']  == 'list'){
   if ($atts['format']  == 'weekly'){
 
 
-  $displayHTML = "<b>Activities for the coming week</b> <br>";
+  $displayHTML = "<b>Activities this Week</b> <br>";
 
   $optParams = array(
     'orderBy' => 'startTime',
