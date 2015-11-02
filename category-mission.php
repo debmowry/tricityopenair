@@ -18,7 +18,7 @@
             global $query_string; query_posts($query_string . '&orderby=mission_order&order=ASC');
         ?>
 
-        <h1 id="category-title">On Mission</h1>
+        <h1 class="entry-header">On Mission</h1>
 
         <?php while ( have_posts() ) : the_post(); ?>
             <?php $posttitle = get_post_field('post_title'); ?>

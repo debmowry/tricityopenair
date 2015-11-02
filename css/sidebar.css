@@ -1,0 +1,11 @@
+.widget {
+    background-color: #f8f5fa;
+}
+.widget a {
+    color: #5b2084;
+    text-decoration: underline;
+}
+.widget a:focus,
+.widget a:hover {
+    color: #9e1905;
+}

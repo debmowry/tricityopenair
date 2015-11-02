@@ -18,7 +18,7 @@
             global $query_string; query_posts($query_string . '&orderby=event_order&order=ASC');
         ?>
 
-        <h1 id="category-title">Upcoming Exhibits, Calls and Special Happenings</h1>
+        <h1 class="entry-header">Upcoming Exhibits, Calls and Special Happenings</h1>
 
         <?php while ( have_posts() ) : the_post(); ?>
 

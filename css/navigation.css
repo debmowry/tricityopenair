@@ -1,3 +1,10 @@
+a:focus, a:hover {
+    border: 2px solid #5b2084;
+}
+#main a {
+    color: #724096;
+    text-decoration: underline;
+}
 .navbar {
     background-color: #ffffff;
     font-size: 1.25em;
@@ -15,8 +22,9 @@
 .nav-menu li:hover > a,
 .nav-menu li a:focus,
 .nav-menu li a:hover {
-    background-color: #375e0b;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #5b2084;
+    padding: 13px 18px;
 }
 
 .nav-menu .sub-menu,
@@ -30,7 +38,7 @@
 .nav-menu .current-menu-item > a,
 .nav-menu .current-menu-ancestor > a {
     background-color: #ffffff;
-    color: #45750d;
+    color: #430073;
     font-size: 1em;
     font-style: italic;
     font-weight: bold;
