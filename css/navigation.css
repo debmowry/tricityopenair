@@ -18,6 +18,10 @@ a:focus, a:hover {
     color: #000000;
 }
 
+.nav-menu li a {
+    color: #000000;
+}
+
 .nav-menu li:focus > a,
 .nav-menu li:hover > a,
 .nav-menu li a:focus,
