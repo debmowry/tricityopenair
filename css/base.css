@@ -1,5 +1,6 @@
 body {
     background: #ffffff;
+    color: #000000;
     font-family: 'Lato', sans-serif;
 
 }
@@ -9,19 +10,40 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
+    margin: 12px 0;
 }
 h1 {
-    color: #5b2084;
     font-size: 150%;
 }
 p {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 1.1em;
+    margin: 12px 0;
 }
 #main {
-    max-width: 1080px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+#content {
+}
+.site-main .sidebar-container {
+    position: relative;
+    top: 10px;
 }
 .hentry {
     padding: 20px 0;
+}
+.sidebar .entry-header,
+.sidebar .entry-content,
+.sidebar .entry-summary,
+.sidebar .entry-meta {
+    max-width: 1040px;
+    padding: 0 376px 0 60px;
+}
+footer#colophon {
+    clear: both;
 }
