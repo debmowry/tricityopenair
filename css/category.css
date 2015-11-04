@@ -1,0 +1,26 @@
+img.attachment-post-thumbnail.wp-post-image {
+    max-width: 150px;
+    width: 150px;
+}
+.category article.has-post-thumbnail {
+    display: flex;
+    margin-left: 10%;
+}
+.category article.has-post-thumbnail figure {
+    margin-right: 10px;
+    order: 1;
+}
+.category article.has-post-thumbnail .post-content {
+    order: 2;
+}
+.category article.has-post-thumbnail header {
+    margin: 0;
+    padding: 0;
+}
+.category article.has-post-thumbnail header h1 {
+    margin: 0 auto 10px;
+}
+
+.engagequestion {
+    text-transform: uppercase;
+}
