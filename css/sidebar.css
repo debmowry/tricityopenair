@@ -1,8 +1,16 @@
+aside.widget {
+    border: 10px solid #e78e4e;
+}
+footer aside.widget {
+    border: none;
+}
 .widget {
     background-color: #f8f5fa;
 }
 .widget .widget-title {
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
+    font-weight: 400;
 }
 .widget a {
     color: #5b2084;
