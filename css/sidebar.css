@@ -1,6 +1,9 @@
 .widget {
     background-color: #f8f5fa;
 }
+.widget .widget-title {
+    font-style: normal;
+}
 .widget a {
     color: #5b2084;
     text-decoration: underline;
@@ -9,3 +12,11 @@
 .widget a:hover {
     color: #9e1905;
 }
+/* Not sure if this will be needed
+.sidebar .entry-header,
+.sidebar .entry-content,
+.sidebar .entry-summary,
+.sidebar .entry-meta {
+    max-width: 1040px;
+    padding: 0 376px 0 60px;
+*/
