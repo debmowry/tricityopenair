@@ -12,8 +12,23 @@
     background-size: contain;
     height: 0;
     margin: 0 auto 55px;
+    padding: 80px 0 23.4375% 0;
     /* height: 480px; */
 }
+.site-header .search-field {
+	background-color: #fff;
+}
+.no-custom-banner .site-header,
+.category .site-header { background-image: url(../images/headers/studio/banner1920w450h.jpg); }
+.give .site-header,
+.single .site-header { background-image: url(../images/headers/ImagineArtLetters.jpg); }
+.about .site-header { background-image: url(../images/headers/walkinwoods/banner1920w450h.jpg); }
+.category-engage .site-header { background-image: url(../images/headers/davechapple/banner1920w450h.jpg); }
+.home .site-header { background-image: url(../images/headers/home/banner1920w450h.jpg); }
+.category-happenings .site-header { background-image: url(../images/headers/happenings/banner1920w450h.jpg); }
+.category-mission .site-header { background-image: url(../images/headers/engage/banner1920w450h.jpg); }
+.contact .site-header { background-image: url(../images/headers/parkwatercolor/banner1920w450h.jpg) }
+
 .site-header .home-link {
     background-image: url(../images/headers/imagineartlogo.png);
     background-image: url(../images/headers/imagineartlogo.svg), linear-gradient(transparent, transparent);
@@ -24,6 +39,9 @@
     height: 80px;
     min-height: 80px;
     padding: 0;
+}
+.site-header .home-link {
+    margin: -80px auto 23.4375%;
 }
 .site-header .home-link .site-title {
     color: #000000;
@@ -41,33 +59,29 @@
     font-style: normal;
     margin-left: 15px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 643px) {
     .site-header {
-        padding: 80px 0 37.5% 0;
+        padding: 80px 0 0 0;
+/* Begin Test code */
+        height: 100%;
+        margin-bottom: 0;
+/* end Test code */
     }
-    .site-header .home-link,
-    .site-header .home-link {
-        margin: -80px auto 37.5%;
-    }
-    .no-custom-banner .site-header { background-image: url(../images/headers/studio/banner600w225h.jpg); }
-    .home .site-header { background-image: url(../images/headers/home/banner600w225h.jpg); }
-    .category .site-header { background-image: url(../images/headers/studio/banner600w225h.jpg); }
-    .category-engage .site-header { background-image: url(../images/headers/engage/banner600w225h.jpg); }
-    .category-happenings .site-header { background-image: url(../images/headers/happenings/banner600w225h.jpg); }
-    .category-mission .site-header { background-image: url(../images/headers/joseph/banner600w225h.jpg); }
-    .give .site-header { background-image: url(../images/headers/walkinwoods/banner600w225h.jpg) }
-    .about .site-header { background-image: url(../images/headers/pieces/banner600w225h.jpg) }
-    .contact .site-header { background-image: url(../images/headers/parkwatercolor/banner600w225h.jpg) }
+}
+@media only screen and (max-width: 620px) {
+	.site-header .home-link .site-description {
+		display: none;
+	}
 }
 @media only screen and (min-width: 601px) and (max-width: 800px) {
     .no-custom-banner .site-header { background-image: url(../images/headers/studio/banner800w250h.jpg); }
     .home .site-header { background-image: url(../images/headers/home/banner800w250h.jpg); }
     .category .site-header { background-image: url(../images/headers/studio/banner800w250h.jpg); }
-    .category-engage .site-header { background-image: url(../images/headers/engage/banner800w250h.jpg); }
+    /*.category-engage .site-header { background-image: url(../images/headers/engage/banner800w250h.jpg); }*/
     .category-happenings .site-header { background-image: url(../images/headers/happenings/banner800w250h.jpg); }
-    .category-mission .site-header { background-image: url(../images/headers/joseph/banner800w250h.jpg); }
-    .give .site-header { background-image: url(../images/headers/walkinwoods/banner800w250h.jpg) }
-    .about .site-header { background-image: url(../images/headers/pieces/banner800w250h.jpg) }
+    .category-mission .site-header { background-image: url(../images/headers/engage/banner800w250h.jpg); }
+    /*.give .site-header { background-image: url(../images/headers/walkinwoods/banner800w250h.jpg) }*/
+    /*.about .site-header { background-image: url(../images/headers/pieces/banner800w250h.jpg) }*/
     .contact .site-header { background-image: url(../images/headers/parkwatercolor/banner800w250h.jpg) }
     .site-header {
         padding: 80px 0 31.25% 0;
@@ -80,11 +94,11 @@
     .no-custom-banner .site-header { background-image: url(../images/headers/studio/banner1200w250h.jpg); }
     .home .site-header { background-image: url(../images/headers/home/banner1200w250h.jpg); }
     .category .site-header { background-image: url(../images/headers/studio/banner1200w250h.jpg); }
-    .category-engage .site-header { background-image: url(../images/headers/engage/banner1200w250h.jpg); }
+    /*.category-engage .site-header { background-image: url(../images/headers/engage/banner1200w250h.jpg); }*/
     .category-happenings .site-header { background-image: url(../images/headers/happenings/banner1200w250h.jpg); }
-    .category-mission .site-header { background-image: url(../images/headers/joseph/banner1200w250h.jpg); }
-    .give .site-header { background-image: url(../images/headers/walkinwoods/banner1200w250h.jpg) }
-    .about .site-header { background-image: url(../images/headers/pieces/banner1200w250h.jpg) }
+    .category-mission .site-header { background-image: url(../images/headers/engage/banner1200w250h.jpg); }
+    /*.give .site-header { background-image: url(../images/headers/walkinwoods/banner1200w250h.jpg) }*/
+    /*.about .site-header { background-image: url(../images/headers/pieces/banner1200w250h.jpg) }*/
     .contact .site-header { background-image: url(../images/headers/parkwatercolor/banner1200w250h.jpg) }
     .site-header {
         padding: 80px 0 20.833333333333% 0;
@@ -97,11 +111,11 @@
     .no-custom-banner .site-header { background-image: url(../images/headers/studio/banner1600w300h.jpg); }
     .home .site-header { background-image: url(../images/headers/home/banner1600w300h.jpg); }
     .category .site-header { background-image: url(../images/headers/studio/banner1600w300h.jpg); }
-    .category-engage .site-header { background-image: url(../images/headers/engage/banner1600w300h.jpg); }
+    /*.category-engage .site-header { background-image: url(../images/headers/engage/banner1600w300h.jpg); }*/
     .category-happenings .site-header { background-image: url(../images/headers/happenings/banner1600w300h.jpg); }
-    .category-mission .site-header { background-image: url(../images/headers/joseph/banner1600w300h.jpg); }
-    .give .site-header { background-image: url(../images/headers/walkinwoods/banner1600w300h.jpg) }
-    .about .site-header { background-image: url(../images/headers/pieces/banner1600w300h.jpg) }
+    .category-mission .site-header { background-image: url(../images/headers/engage/banner1600w300h.jpg); }
+    /*.give .site-header { background-image: url(../images/headers/walkinwoods/banner1600w300h.jpg) }*/
+    /*.about .site-header { background-image: url(../images/headers/pieces/banner1600w300h.jpg) }*/
     .contact .site-header { background-image: url(../images/headers/parkwatercolor/banner1600w300h.jpg) }
     .site-header {
         padding: 80px 0 18.75% 0;
@@ -113,13 +127,13 @@
 @media only screen and (min-width: 1601px) {
     .category .site-header { background-image: url(../images/headers/studio/banner1920w300h.jpg); }
     .category-happenings .site-header { background-image: url(../images/headers/happenings/banner1920w300h.jpg); }
-    .category-mission .site-header { background-image: url(../images/headers/joseph/banner1920w300h.jpg); }
-    .give .site-header { background-image: url(../images/headers/walkinwoods/banner1920w300h.jpg) }
-    .about .site-header { background-image: url(../images/headers/pieces/banner1920w300h.jpg) }
+    .category-mission .site-header { background-image: url(../images/headers/engage/banner1920w300h.jpg); }
+    /*.give .site-header { background-image: url(../images/headers/walkinwoods/banner1920w300h.jpg) }*/
+    /*.about .site-header { background-image: url(../images/headers/pieces/banner1920w300h.jpg) }*/
     .contact .site-header { background-image: url(../images/headers/parkwatercolor/banner1920w300h.jpg) }
     .no-custom-banner .site-header { background-image: url(../images/headers/studio/banner1920w450h.jpg); }
     .home .site-header { background-image: url(../images/headers/home/banner1920w450h.jpg); }
-    .category-engage .site-header { background-image: url(../images/headers/engage/banner1920w450h.jpg); }
+    /*.category-engage .site-header { background-image: url(../images/headers/engage/banner1920w450h.jpg); }*/
     .site-header {
         padding: 80px 0 15.625% 0;
     }

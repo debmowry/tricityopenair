@@ -4,3 +4,9 @@
 .site-footer .sidebar-container {
     background-color: #2a0048;
 }
+#loginSite {
+	text-align: center;
+}
+.loginButton {
+	margin-bottom: 8px;
+	background: #008000;

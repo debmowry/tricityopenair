@@ -16,15 +16,15 @@
 	<div id="tertiary" class="sidebar-container" role="complementary">
 		<div class="sidebar-inner">
 			<div class="widget-area">
-				<aside id="text-2" class="widget widget_text">
+				<div id="text-2" class="widget widget_text">
 					<div class="textwidget">
 					<?php 
+					dynamic_sidebar( 'sidebar-2' );
 					$array = array("format" => "weekly","calendar" => "default");
 					echo displayGCalender_func($array);
-					//dynamic_sidebar( 'sidebar-2' ); 
 					?>
 					</div><!-- .textwidget-area -->
-				</aside><!-- .aside- -->		
+				</div><!-- .div-area -->		
 			</div><!-- .widget-area -->
 		</div><!-- .sidebar-inner -->
 	</div><!-- #tertiary -->

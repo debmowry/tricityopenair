@@ -1,0 +1,12 @@
+.category figure,
+.single figure {
+    float: left;
+    margin-right: 15px;
+    width: 150px;
+}
+img.size-full,
+img.size-large,
+img.wp-post-image {
+	height: auto;
+	max-width: 150px;
+}

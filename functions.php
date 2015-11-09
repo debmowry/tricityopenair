@@ -3,7 +3,7 @@ add_filter('widget_text', 'do_shortcode');
 
 // global variables
 
-define(MAX_RESULTS,8);
+define(MAX_RESULTS,5);
 
 // import styles, fonts and scripts for child theme plus moved "add_action" below function for consistency
 function tricityopenair_enqueue_styles() {
@@ -14,7 +14,13 @@ function tricityopenair_enqueue_styles() {
     //wp_enqueue_script( 'tricityopenair_menu_custom' );
 }
 add_action( 'wp_enqueue_scripts', 'tricityopenair_enqueue_styles' );
+function remove_masonry() {
+	if ( is_active_sidebar( 'sidebar-1' ) ) {
+		wp_dequeue_script('jquery-masonry');
+	}
+}
 
+add_action( 'wp_print_scripts', 'remove_masonry', 100 );
 // Custom Function to include favicon
 function favicon_link() {
     echo '<link rel="Shortcut Icon" type="image/x-icon" href="'. get_bloginfo('stylesheet_directory') .'/favicon.ico" />' . "\n";
@@ -32,6 +38,12 @@ function tricityopenair_create_body_class() {
             $bodyclass = 'contact';
         } elseif (strpos($pagetitle, 'Give') !== FALSE) {
             $bodyclass = 'give';
+        } elseif ((strpos($pagetitle, 'Happen') !== FALSE) || (strpos($pagetitle, 'Event') !== FALSE)) {
+            $bodyclass = 'category-happenings';
+        } elseif (strpos($pagetitle, 'Engage') !== FALSE) {
+            $bodyclass = 'category-engage';
+        } elseif (strpos($pagetitle, 'Mission') !== FALSE) {
+            $bodyclass = 'category-mission';
         } else {
             $bodyclass = 'no-custom-banner';
         }
@@ -185,16 +197,16 @@ if ($atts['format']  == 'day'){
         $secondDate = date_format($start, 'Ymd');
 
           if ($firstDate == $secondDate){
-            $displayHTML .= date_format($start,'H:i')." to ".date_format($start,'H:i');
-            $displayHTML .= "<a href=\"" .$event->getHtmlLink()."\" target=\"_blank\">";
-            $displayHTML .= $event->getSummary(). "</a><br>";
+            $displayHTML .= "<div id=\"time\">".date_format($start,'H:i')." to ".date_format($end,'H:i')."</div>";
+            $displayHTML .= "<div id=\"activity\"> <a href=\"" .$event->getHtmlLink()."\" target=\"_blank\">";
+            $displayHTML .= $event->getSummary(). "</a>"."</div>";
 
          }
          else {
-            $displayHTML .= "". date_format($start,'l F jS Y')."<br> ";
-            $displayHTML .= date_format($start,'H:i')." to ".date_format($start,'H:i');
-            $displayHTML .= "  <a href=\"" .$event->getHtmlLink()."\" target=\"_blank\">";
-            $displayHTML .= $event->getSummary(). "</a><br>";
+            $displayHTML .= "<div id=\"day\">". date_format($start,'l F jS Y')."</div>";
+            $displayHTML .= "<div id=\"time\">". date_format($start,'H:i')." to ".date_format($end,'H:i')."</div>";
+            $displayHTML .= "<div id=\"activity\"> <a href=\"" .$event->getHtmlLink()."\" target=\"_blank\">";
+            $displayHTML .= $event->getSummary(). "</a>"."</div>";
 
             $previousStart = $start;
           }//end else date heading
@@ -203,7 +215,7 @@ if ($atts['format']  == 'day'){
       }//end for each
     }//end else
 
-$displayHTML .=  "<a href =\"https://calendar.google.com/calendar/embed?src=".$calendarToWorkWith."&amp;ctz=America/Chicago\" target=\"_blank\"> Link to Calendar</a>";
+$displayHTML .=  "<div id=\"calendar link\"><a href =\"https://calendar.google.com/calendar/embed?src=".$calendarToWorkWith."&amp;ctz=America/Chicago\" target=\"_blank\"> Link to Calendar</a></div>";
 return $displayHTML;
 }//end of function
 

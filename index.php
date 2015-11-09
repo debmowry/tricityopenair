@@ -48,8 +48,5 @@ get_header(); ?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
-<?php
-	$sidebar = get_post_meta($post->ID, "sidebar", true);
-	get_sidebar($sidebar);
-?>
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

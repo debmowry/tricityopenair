@@ -10,6 +10,7 @@ Template:    twentythirteen
 @import url('css/base.css');
 @import url('css/category.css');
 @import url('css/contact.css');
+@import url('css/engage.css');
 @import url('css/footer.css');
 @import url('css/form.css');
 @import url('css/googlecal.css');
@@ -21,9 +22,23 @@ Template:    twentythirteen
 @import url('css/shoppingcart.css');
 @import url('css/sidebar.css');
 
-/*.entry-author-link,
-.entry-permalink,
-.entry-date,
-.entry-meta {
-	display: none;
-}*/
+/** use this if we want to get the search box to remain open **/
+/**
+.site-header .search-form {
+	position: absolute;
+	right: 20px;
+	top: 1px;
+}
+
+.site-header .search-field {
+	width: 100%;
+}
+
+.site-header .search-field: focus {
+	background-color: #fff;
+	border: 2px solid #c3c0ab;
+	cursor: text;
+	outline: 0;
+	width: 100%
+}
+**/

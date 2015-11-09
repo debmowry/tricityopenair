@@ -1,3 +1,14 @@
+
+/**
+ * 6.0 Sidebar
+ * ----------------------------------------------------------------------------
+ */
+
+.site-main .widget-area {
+	float: none;
+	width: auto;
+}
+
 aside.widget {
     border: 10px solid #e78e4e;
 }
@@ -10,8 +21,13 @@ footer aside.widget {
 .widget .widget-title {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
+	font-size: 108%;
 }
+.widget h4 {
+	margin: 4px;
+}
+
 .widget a {
     color: #5b2084;
     text-decoration: underline;
@@ -28,3 +44,4 @@ footer aside.widget {
     max-width: 1040px;
     padding: 0 376px 0 60px;
 */
+ .widget_paypal_donations { text-align: center;}

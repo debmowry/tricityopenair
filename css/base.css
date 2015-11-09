@@ -17,33 +17,111 @@ h1 {
 }
 p {
     font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 1.1em;
+    font-weight: 400;
+    font-size: 1em;
     margin: 12px 0;
 }
-#main {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0 auto;
-    max-width: 1200px;
+@media (max-width: 1199px) {
+    #main {
+        margin: 0 15px;
+    }
 }
-#content {
-}
-.site-main .sidebar-container {
-    position: relative;
-    top: 10px;
-}
-.hentry {
-    padding: 20px 0;
-}
-.sidebar .entry-header,
-.sidebar .entry-content,
-.sidebar .entry-summary,
-.sidebar .entry-meta {
-    max-width: 1040px;
-    padding: 0 376px 0 60px;
+@media (min-width: 1000px) {
+    .page #main,
+    .single #main {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0 auto;
+        max-width: 1200px;
+        overflow: hidden; /* prevent sidebar from overlapping footer */
+    }
+    .page #content,
+    .single #content {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 68%; /* prevent sidebar from overlapping footer */
+        /* float: left; /* prevent sidebar from overlapping footer */
+    }
+    .page .site-main .sidebar-container,
+    .single .site-main .sidebar-container {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative;
+        /* position: static; /* prevent sidebar from overlapping footer */
+        /* float: right; /* prevent sidebar from overlapping footer */
+        width: 30%;  /* prevent sidebar from overlapping footer */
+        height: 100%; /* prevent sidebar from overlapping footer */
+        top: 10px; /* prevent sidebar from overlapping footer */
+    }
+    .category #primary {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0 auto;
+        max-width: 1200px;
+        overflow: hidden; /* prevent sidebar from overlapping footer */
+    }
+    .category #content {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-right: 3%;
+        width: 68%; /* prevent sidebar from overlapping footer */
+        /* float: left; /* prevent sidebar from overlapping footer */
+    }
+
+    .category article.has-post-thumbnail {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .category .site-main .sidebar-container {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative;
+        /* position: static; /* prevent sidebar from overlapping footer */
+        /* float: right; /* prevent sidebar from overlapping footer */
+        width: 30%;  /* prevent sidebar from overlapping footer */
+        height: 100%; /* prevent sidebar from overlapping footer */
+        top: 10px; /* prevent sidebar from overlapping footer */
+    }
+    .hentry {
+        padding: 20px 0;
+    }
+    .sidebar .entry-header,
+    .sidebar .entry-content,
+    .sidebar .entry-summary,
+    .sidebar .entry-meta {
+        max-width: 1040px;
+        padding: 0 376px 0 60px;
+    }
 }
 footer#colophon {
     clear: both;
+}
+table.home-images {
+    width: 100%;
+    display: flex;
+    border: none;
+    font-size: 100%;
+}
+table.home-images td {
+    text-align: center;
+    padding: 10px;
+}
+
+.navbar {
+    color: #fff;
+    width: 100%;
+}
+
+button.menu-toggle, button.menu-toggle:hover, button.menu-toggle:focus, button.menu-toggle:active {
+    color: #fff;
 }

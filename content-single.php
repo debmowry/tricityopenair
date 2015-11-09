@@ -10,7 +10,8 @@
             echo '<figure>'. get_the_post_thumbnail() .'</figure>';
         }
     ?>
-    <header class="entry-header">
+<div class="tricity-text">
+    <header class="tricity-header">
         <h1 id="post-title"><?php the_title(); ?></h1>
         <?php
             // Check for post_category = exhibit subtitle
@@ -22,7 +23,7 @@
             }
         ?>
     </header>
-    <div class="entry-content">
+    <div class="tricity-content">
         <?php
             // Check for post_category = exhibit date and times
             if (get_field('event_date')) {
@@ -67,31 +68,33 @@
             if (get_field('artist_medium')) {
                 echo '<p class="artist-info medium"><strong>Medium: </strong>'; the_field('artist_medium'); echo '</p>';
             }
-            // Check for post_category = grant name and grant details
+
+          // Check for post_category = grant name and grant details
             if (get_field('grant_name')) {
-                echo '<p class="artist-info disability"><strong>Grant Name: </strong>'; the_field('grant_name'); echo '</p>';
+                echo '<p><strong>Grant Name: </strong>'; the_field('grant_name'); echo '</p>';
             }
             if (get_field('grant_num_served')) {
-                echo '<p class="artist-info medium"><strong>Grant Details: </strong>'; the_field('grant_num_served'); echo '</p>';
+                echo '<p><strong>Grant Details: </strong>'; the_field('grant_num_served'); echo '</p>';
             }
             if (get_field('grant_impact')) {
-                echo '<p class="artist-info medium"><strong>Impact of Grant: </strong>'; the_field('grant_impact'); echo '</p>';
+                echo '<p><strong>Impact of Grant: </strong>'; the_field('grant_impact'); echo '</p>';
             }
             if (get_field('grant_status')) {
-                echo '<p class="artist-info medium"><strong>Grant Status: </strong>'; the_field('grant_status'); echo '</p>';
+                echo '<p><strong>Grant Status: </strong>'; the_field('grant_status'); echo '</p>';
             }
 
             // Used on all post pages.
             the_content();
                 wp_link_pages( array(
-                    'before' => '<p class="page-links">' . __( 'Pages: ', 'a11yall' ),
+                    'before' => '<p class="page-links">' . __( 'Pages: ', 'twentythirteen' ),
                     'after'  => '</p>',
                     )
                 );
         ?>
-    </div><!--.entry-->
+    </div><!--.tricity-content-->
     <?php
-        $editpost =  sprintf( __('Edit This Post' , 'a11yall') );
+        $editpost =  sprintf( __('Edit This Post' , 'twentythirteen') );
         edit_post_link($editpost, '<p class="button editlink">', '</p>');
     ?>
+</div> <!-- tricity-text -->
 </article>

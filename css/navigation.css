@@ -5,7 +5,8 @@ a:focus, a:hover {
     color: #724096;
     text-decoration: underline;
 }
-.navbar {
+/* Changing for accessibility / mobile usability SR
+/* .navbar {
     background-color: #ffffff;
     font-size: 1.25em;
     margin: 0 auto;
@@ -46,4 +47,142 @@ a:focus, a:hover {
     font-size: 1em;
     font-style: normal;
     font-weight: bold;
+}
+ */
+ 
+ /* Start new menu styles SR */
+ .navbar {
+    background-color: #430073;
+    font-size: 1.5m;
+    margin: 0 auto;
+   /* max-width: 1600px; */
+    width: 100%;
+}
+
+.nav-menu ul {
+    background-color: #430073;
+    color: #ffffff;
+}
+
+.nav-menu li a {
+    color: #ffffff;
+}
+
+.nav-menu li:focus > a,
+.nav-menu li:hover > a,
+.nav-menu li a:focus,
+.nav-menu li a:hover {
+    background-color: #ffffff;
+    color: #430073;
+    padding: 13px 18px;
+}
+
+
+.nav-menu .sub-menu,
+.nav-menu .children {
+    background-color: #724096;
+    color: #ffffff;
+}
+
+.nav-menu .current_page_item > a,
+.nav-menu .current_page_ancestor > a,
+.nav-menu .current-menu-item > a,
+.nav-menu .current-menu-ancestor > a {
+    background-color: #ffffff;
+    color: #430073;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: bold;
+}
+/* End new menu styles SR */
+
+a.post-edit-link {
+    background: #aa0000;
+    background: -webkit-linear-gradient(top, #fd2808 0%, #aa0000 100%);
+    background: linear-gradient(to bottom, #fd2808 0%, #aa0000 100%);
+    border-color: #aa0000;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 2px;
+    color: #ffffff !important;
+    display: inline-block;
+    padding: 11px 24px 10px;
+    text-decoration: none !important;
+}
+a.post-edit-link:focus,
+a.post-edit-link:hover {
+    background: #333333;
+    background: -webkit-linear-gradient(top, #444444 0%, #000000 100%);
+    background: linear-gradient(to bottom, #444444 0%, #000000 100%);
+    border-color: #000000;
+    color: #ff8c00 !important;
+    text-decoration: underline;
+}
+
+a.button.guest {
+    background: #ff8c00;
+    background: -webkit-linear-gradient(top, #ff9900 0%, #ff6d00 100%);
+    background: linear-gradient(to bottom, #ff9900 0%, #ff6d00 100%);
+    border-color: #ff6d00;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8px;
+    color: #000000 !important;
+    display: inline-block;
+    padding: 11px 24px 10px;
+    text-decoration: none !important;
+}
+a.button.guest:focus,
+a.button.guest:hover {
+    background: #333333;
+    background: -webkit-linear-gradient(top, #444444 0%, #000000 100%);
+    background: linear-gradient(to bottom, #444444 0%, #000000 100%);
+    border-color: #000000;
+    color: #ff8c00 !important;
+    text-decoration: underline;
+}
+a.actionButton, a.actionButton:visited {
+	margin-bottom: 8px;
+	background: #b93207;
+	background: -webkit-linear-gradient(top, #b93207 0%, #d94412 100%);
+	background: linear-gradient(to bottom, #b93207 0%, #d94412 100%);
+    border: 3px solid #b93207;
+    border-radius: 2px;
+	font-size: 115%;
+    color: #fff !important;
+    display: inline-block;
+    padding: 8px 18px 10px;
+    text-decoration: none !important;
+}
+a.actionButton:focus, a.actionButton:hover {
+    background: #fff;
+	border: 3px solid #b93207;
+    color: #b93207 !important;
+    text-decoration: none !important;
+}
+
+button:hover,
+button:focus,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus {
+    background: #ed6a31; /* Old browsers */
+    background: -webkit-linear-gradient(top, #ed6a31 0%, #e55627 100%); /* Chrome 10+, Safari 5.1+ */
+    background:   linear-gradient(to bottom, #ed6a31 0%, #e55627 100%); /* W3C */
+    outline: none;
+}
+
+button:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+input[type="reset"]:active {
+    background: #d94412; /* Old browsers */
+    background: -webkit-linear-gradient(top, #d94412 0%, #e05d22 100%); /* Chrome 10+, Safari 5.1+ */
+    background:   linear-gradient(to bottom, #d94412 0%, #e05d22 100%); /* W3C */
+    border: none;
+    border-top: 3px solid #b93207;
+    padding: 10px 24px 11px;
 }
